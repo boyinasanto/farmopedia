@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+ <head>
+    <style>
+
+    ul
+	{
+	list-style-type:none;
+	padding:10px;
+	width:150px;
+	position:absolute;
+	top:10%;
+	}
+
+
+
+
+	li1 a
+	{
+	border:1px solid black;
+	border-width:1px;
+	display:block;
+	color:black;
+	font-size:20px;
+	padding:20px;
+	text-align:center;
+	text-decoration:none;
+	}
+li1 a.active {
+    background-color: #4CAF50;
+    color: white;
+}
+
+li1 a:hover:not(.active) {
+    background-color:green;
+    color: white;
+}
+
+   body {
+     margin: 0;
+     padding :0;
+     background : url(A.jpg);
+     background-size:100%;
+     font-family:sans-serif;
+   }
+
+
+   h2{
+     margin : 0;
+     padding: 0 0 20px;
+     color : #efed40;
+     text-align : center;
+   }
+   form {
+
+   width:300px;
+   margin:auto;
+
+   padding:150px;
+position:relative;
+top:20%;
+ }
+
+   button {
+       background-color: #4CAF50;
+       color: white;
+       padding: 9px;
+       margin: 8px 0;
+       border: none;
+       cursor: pointer;
+       width: 100%;
+
+}
+
+   input[type=email], input[type=text] {
+      width :100%;
+   margin-bottom:20px;
+       padding:12px;
+       margin: 8px 0;
+       display: inline-block;
+       border: 1px solid #ccc;
+       box-sizing: border-box;
+}
+
+input[type=text1] {
+      width :100%;
+   margin-bottom:20px;
+       padding:35px;
+       margin: 8px 0;
+       display: inline-block;
+       border: 1px solid #ccc;
+       box-sizing: border-box;
+}
+.container {
+    padding:35px;
+    background:rgba(0,0,0,.5);
+    width:100%;
+  position:center;
+
+    }
+
+
+ body {
+    background-image: url("A.jpg");
+    background-position:center;
+    background-repeat:no-repeat;
+    background-attachment: fixed;
+}
+
+
+ </style>
+</head>
+
+<body>
+
+ <form action="usercontact.php" method="POST">
+ <div class = "container">
+<h2> Contact Us </h2>
+<label><b> Email</b>  </label><br>
+           <input type="email" placeholder="Enter Email" name="email" required><br>
+<label><b> Enter your query</b></label>
+             <input type="text1" placeholder="" name="query" required><br>
+                <button type="submit">Submit</button>
+</div>
+   </form>
+
+
+<ul>
+<li1><a href="userhome.html">Home</a><li1>
+<li1><a href="usersoilsubmit.php">Soil</a></li1>
+<li1><a href="userfertilizer.php">Fertilizers</a></li1>
+<li1><a href="usermarket.php">Market</a></li1>
+<li1><a href="reports.html">Reports</a></li1>
+<li1><a href="contact.html">Contact us</a></li1>
+<li1><a href="logout.php">Logout</a></li1>
+
+</ul>
+
+
+
+</body>
+
+</html>
